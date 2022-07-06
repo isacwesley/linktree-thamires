@@ -1,16 +1,16 @@
 :root {
   --font-family: "Roboto Mono", monospace;
-  --fundo-body: #fff0f6;
+  --fundo-body: #1f000b;
+  --color-text: #fff0f6;
   --border-imagem: #d6336c;
   --background-button: #d6336c;
-  --color-text: #1f000b;
   --color-text-button: #ffffff;
   --background-hover-button: #a61e4d;
 }
 
-.dark:root {
-  --fundo-body: #1f000b;
-  --color-text: #fff0f6;
+.light:root {
+  --color-text: #1f000b;
+  --fundo-body: #fff0f6;
 }
 
 * {

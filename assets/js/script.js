@@ -1,12 +1,11 @@
 const html = document.querySelector('html');
-const dark = document.querySelector('.dark');
+const light = document.querySelector('.light');
 
-dark.addEventListener('click', function() {
-   html.classList.toggle('dark');
-   if(html.classList.contains('dark')) {
-      dark.setAttribute('src', './assets/img/light.svg')
+light.addEventListener('click', function() {
+   html.classList.toggle('light');
+   if(html.classList.contains('light')) {
+      light.setAttribute('src', './assets/img/dark.svg')
    } else {
-      dark.setAttribute('src', './assets/img/dark.svg')
-
+      light.setAttribute('src', './assets/img/light.svg')
    }
 });

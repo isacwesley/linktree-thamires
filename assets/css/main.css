@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: "Roboto Mono", monospace;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  color: #1F000B;
+}
+
+body {
+  background: #fff0f6;
+}
+
+.container {
+  -webkit-box-sizing: initial;
+          box-sizing: initial;
+  max-width: 300px;
+  margin: auto;
+  padding: 60px 30px;
+}
+
+.perfil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  gap: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.perfil .perfil__wrapper {
+  position: relative;
+  width: 100px;
+}
+.perfil .perfil__wrapper::before {
+  content: "";
+  position: absolute;
+  inset: -7px;
+  border: 4px solid #d6336c;
+  border-radius: 50%;
+  z-index: -1;
+}
+.perfil .perfil__wrapper__imagem {
+  display: block;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  width: 100%;
+}
+.perfil .perfil__nomes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.perfil .perfil__nomes__nome {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+}
+.perfil .perfil__nomes__nick {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.links {
+  margin-block: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  gap: 16px;
+}
+.links .links__button {
+  text-align: center;
+  border-radius: 6px;
+  background: #d6336c;
+  color: #ffffff;
+  padding-block: 16px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.links .links__button:hover {
+  background: #a61e4d;
+}
+
+.rodape {
+  font-size: 12px;
+  text-align: center;
+  font-weight: 500;
+}
